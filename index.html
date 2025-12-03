@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tunmise & Seyi Wedding</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav id="navbar" class="nav-transparent">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-heart text-rose"></i>
+                <span class="logo-text">Tunmise & Seyi</span>
+            </div>
+            
+            <div class="nav-links">
+                <button onclick="scrollToSection('home')" class="nav-btn">Home</button>
+                <button onclick="scrollToSection('story')" class="nav-btn">Our Story</button>
+                <button onclick="scrollToSection('gallery')" class="nav-btn">Gallery</button>
+                <button onclick="scrollToSection('details')" class="nav-btn">Details</button>
+                <button onclick="scrollToSection('rsvp')" class="nav-btn">RSVP</button>
+            </div>
+
+            <button class="menu-toggle" onclick="toggleMenu()">
+                <i id="menu-icon" class="fas fa-bars"></i>
+            </button>
+        </div>
+
+        <!-- <div id="mobile-menu" class="mobile-menu"> <button onclick="scrollToSection('home')">Home</button>
+            </div><div id="mobile-menu" class="mobile-menu hidden"> <button onclick="scrollToSection('home')">Home</button>
+            <button onclick="scrollToSection('story')">Our Story</button>
+            <button onclick="scrollToSection('gallery')">Gallery</button>
+            <button onclick="scrollToSection('details')">Details</button>
+            <button onclick="scrollToSection('rsvp')">RSVP</button>
+        </div> -->
+    </nav>
+
+    <section id="home" class="hero-section">
+        <div class="hero-bg-overlay"></div>
+        <img src="https://i.ibb.co/CsVC7Cyy/DSC-0233.jpg" alt="Tunmise and Seyi" class="hero-bg-img">
+        
+        <div class="hero-content fade-in">
+            <div class="hero-icon">
+                <i class="fas fa-heart text-rose pulse"></i>
+            </div>
+            <h1 class="hero-title">Tunmise & Seyi</h1>
+            <p class="hero-subtitle">Are Getting Married!</p>
+            
+            <div class="hero-info">
+                <span><i class="fas fa-calendar"></i> January 3, 2026</span>
+                <span class="separator">•</span>
+                <span><i class="fas fa-map-marker-alt"></i> The Church of the Lord Worldwide, CA</span>
+            </div>
+
+            <button onclick="scrollToSection('rsvp')" class="btn-primary">RSVP Now</button>
+        </div>
+    </section>
+
+    <section id="story" class="section-padding bg-gradient">
+        <div class="container">
+            <div class="section-header">
+                <i class="fas fa-book text-rose section-icon"></i>
+                <h2 class="section-title">Our Love Story</h2>
+                <div class="divider"></div>
+            </div>
+
+            <div class="story-grid">
+                <div class="card">
+                    <h3 class="card-title text-rose">How We Met</h3>
+                    <p>It was a beautiful spring day in 2019 when our paths first crossed at a mutual friend's art gallery opening. Seyi was admiring a painting, and Tunmise accidentally bumped into him while taking a step back to get a better view. They both laughed, and what started as an awkward moment turned into hours of conversation about art, life, and dreams.</p>
+                </div>
+                <div class="card">
+                    <h3 class="card-title text-rose">The First Date</h3>
+                    <p>Three days later, Seyi gathered the courage to ask Tunmise out for coffee. That coffee date turned into a walk through the park, which turned into dinner, which turned into the beginning of forever. They talked until the stars came out, realizing they had found something truly special.</p>
+                </div>
+                <div class="card">
+                    <h3 class="card-title text-rose">The Proposal</h3>
+                    <p>On their five-year anniversary, Seyi took Tunmise back to the art gallery where they first met. The gallery owner had arranged for them to have the space to themselves. As Tunmise turned to look at the same painting from that fateful day, she found Seyi on one knee. Through happy tears, she said yes!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="section-padding bg-white">
+        <div class="container">
+            <div class="section-header">
+                <i class="fas fa-camera text-rose section-icon"></i>
+                <h2 class="section-title">Our Moments</h2>
+                <div class="divider"></div>
+            </div>
+
+            <div class="gallery-grid">
+                <div class="gallery-item"><i class="fas fa-camera"></i></div>
+                <div class="gallery-item"><i class="fas fa-camera"></i></div>
+                <div class="gallery-item"><i class="fas fa-camera"></i></div>
+                <div class="gallery-item"><i class="fas fa-camera"></i></div>
+                <div class="gallery-item"><i class="fas fa-camera"></i></div>
+                <div class="gallery-item"><i class="fas fa-camera"></i></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="details" class="section-padding bg-gradient">
+        <div class="container">
+            <div class="section-header">
+                <i class="fas fa-calendar-check text-rose section-icon"></i>
+                <h2 class="section-title">Wedding Details</h2>
+                <div class="divider"></div>
+            </div>
+
+            <div class="details-grid">
+                <div class="card">
+                    <div class="card-header">
+                        <i class="fas fa-users text-rose"></i>
+                        <h3>Ceremony</h3>
+                    </div>
+                    <div class="card-body">
+                        <p><strong>Date:</strong> Saturday, 3rd January, 2026</p>
+                        <p><strong>Time:</strong> 8:00 AM</p>
+                        <p><strong>Venue:</strong> Church; The Church of the Lord Worldwide</p>
+                        <p><strong>Address:</strong> Opposite Community Grammar School, Toro Road, Modakeke, Osun State</p>
+                        <p class="note">Please arrive 30 minutes early for seating</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <i class="fas fa-glass-cheers text-rose"></i>
+                        <h3>Reception</h3>
+                    </div>
+                    <div class="card-body">
+                        <p><strong>Time:</strong> 10:00 AM - 3:00 PM</p>
+                        <p><strong>Venue:</strong> Same Location</p>
+                        <p><strong>Dress Code:</strong> Formal Attire</p>
+                        <p><strong>Dinner:</strong> Plated Meal</p>
+                        <p class="note">Dancing, cocktails, and celebration to follow dinner</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="registry-box">
+                <h3>Gifts & Registry</h3>
+                <p>Your presence is enough of a present to us! But if you insist, we'd appreciate if all gifts are monetized and sent into our accounts below.</p>
+                <div class="account-grid">
+                     <div class="account-card">
+                        <i class="fas fa-gift text-rose"></i>
+                        <h4>Account 1</h4>
+                        <p>6173825401</p>
+                        <p>Fidelity Bank</p>
+                        <p>Odewole Oluwatunmise</p>
+                     </div>
+                     <div class="account-card">
+                        <i class="fas fa-gift text-rose"></i>
+                        <h4>Account 2</h4>
+                        <p>2078527605</p>
+                        <p>United Bank for Africa</p>
+                        <p>Shittu Oluwaseyi Philip</p>
+                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding bg-white">
+        <div class="container">
+            <div class="section-header">
+                <i class="fas fa-heart text-rose section-icon"></i>
+                <h2 class="section-title">The Proposal</h2>
+                <div class="divider"></div>
+            </div>
+            
+            <div class="masonry-grid">
+                <div class="masonry-col">
+                    <img src="https://i.ibb.co/wh9S1SC2/DSC-0064.jpg" alt="Proposal">
+                    <img src="https://i.ibb.co/5hTQhhXq/DSC-0120.jpg" alt="Proposal">
+                    <img src="https://i.ibb.co/tMnr0hJ6/DSC-0102.jpg" alt="Proposal">
+                </div>
+                
+                <div class="masonry-col">
+                    <img src="https://i.ibb.co/RGjv8QNk/DSC-0107.jpg" alt="Proposal">
+                    <img src="https://i.ibb.co/3m1tP39W/DSC-0110.jpg" alt="Proposal">
+                    <img src="https://i.ibb.co/LhCpSL5G/DSC-0216.jpg" alt="Proposal"> 
+                </div>
+                
+                <div class="masonry-col">
+                    <img src="https://i.ibb.co/jvR7PX3L/DSC-0140.jpg" alt="Proposal">
+                    <img src="https://i.ibb.co/wZbFnbfY/DSC-0326.jpg" alt="Proposal">
+                    <img src="https://i.ibb.co/Y747hrs1/DSC-0214-Enhanced-NR.jpg" alt="Proposal">
+                </div>
+                
+                <div class="masonry-col">
+                    <img src="https://i.ibb.co/C5R5p4Kn/DSC-0271.jpg" alt="Proposal">
+                    <img src="https://i.ibb.co/JwnFWsKn/DSC-0335.jpg" alt="Proposal">
+                    <img src="https://i.ibb.co/JWkX30W4/DSC-0339.jpg" alt="Proposal">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding bg-gradient">
+        <div class="container">
+             <div class="section-header">
+                <i class="fas fa-map-marker-alt text-rose section-icon"></i>
+                <h2 class="section-title">Location</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="map-container card">
+                <h3>The Church of the Lord Worldwide</h3>
+                <div class="map-frame">
+                    <iframe src="https://maps.google.com/maps?q=Modakeke,%20Osun%20State&t=&z=13&ie=UTF8&iwloc=&output=embed" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="rsvp" class="section-padding bg-white">
+        <div class="container rsvp-container">
+            <div class="section-header">
+                <i class="fas fa-envelope-open-text text-rose section-icon"></i>
+                <h2 class="section-title">RSVP</h2>
+                <div class="divider"></div>
+                <p>Please respond by December 15, 2025</p>
+            </div>
+
+            <form class="rsvp-form" onsubmit="handleRsvp(event)">
+                <div class="form-group">
+                    <label>Full Name *</label>
+                    <input type="text" id="name" required placeholder="John Doe">
+                </div>
+
+                <div class="form-group">
+                    <label>Email *</label>
+                    <input type="email" id="email" required placeholder="john@example.com">
+                </div>
+
+                <div class="form-group">
+                    <label>Number of Guests *</label>
+                    <select id="guests">
+                        <option value="1">1 Guest</option>
+                        <option value="2">2 Guests</option>
+                        <option value="3">3 Guests</option>
+                        <option value="4">4 Guests</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Will you be attending? *</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="attending" value="yes" checked> Joyfully Accepts</label>
+                        <label><input type="radio" name="attending" value="no"> Regretfully Declines</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Special Requests</label>
+                    <textarea id="message" rows="4" placeholder="Dietary restrictions, song requests..."></textarea>
+                </div>
+
+                <button type="submit" class="btn-primary full-width">Submit RSVP</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <i class="fas fa-heart text-rose"></i>
+        <h3>Tunmise & Seyi</h3>
+        <p>January 3, 2026 • The Church of the Lord Worldwide</p>
+        <p class="copyright">© Big_Sam DESIGN</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
